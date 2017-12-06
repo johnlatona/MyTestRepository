@@ -1,0 +1,16 @@
+p{
+	font-family: 'Lucida Sans Pro', sans-serif;
+}
+
+.p1{
+	font-weight: bold;
+}
+
+.p2{
+	font-size: 24px;
+	letter-spacing: 3px;
+}
+
+.p3{
+	line-height: 50px;
+}

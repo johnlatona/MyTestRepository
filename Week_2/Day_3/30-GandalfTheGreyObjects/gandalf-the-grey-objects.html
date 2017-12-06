@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gandalf The Grey Objects</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var gandalf = {
+      "real name": "Gandalf",
+      "age (est)": 11000,
+      "race": "Maia",
+      "haveRetirementPlan": true,
+      "aliases": [
+        "Greyhame",
+        "Stormcrow",
+        "Mithrandir",
+        "Gandalf the Grey",
+        "Gandalf the White"
+      ]
+    };
+
+    var obj1 = {};
+
+    var john = {
+      firstName: "John",
+      lastName: "LaTona",
+      age: 30,
+      whereBorn: "Perth Amboy, NJ"
+    };
+
+    console.log(john.firstName); // "John"
+    console.log(john.lastName); // "LaTona"
+    console.log(john.age); // 30
+    console.log(john.whereBorn); // "Perth Amboy, NJ"
+
+    // Object properties can be accessed with "bracket notation"
+    alert("My name is " + gandalf["real name"]); //gandalf.real name
+
+    // Or with "dot notation" if the property has no spaces
+    if (gandalf.haveRetirementPlan) {
+
+      // Or with a variable that matches the name of the property
+      var ageProperty = "age (est)";
+      var years = gandalf[ageProperty];
+      alert("My 401k has been gathering interest for " + years + " years!");
+    }
+
+    // You can access arrays and their properties from an object
+    alert("I have more than " + gandalf.aliases.length + " aliases");
+
+    alert("One of my aliases is: " + gandalf.aliases[1]);
+    // Non-existent properties return undefined
+    alert("My designation is " + gandalf["designation"]);
+  </script>
+</body>
+
+</html>

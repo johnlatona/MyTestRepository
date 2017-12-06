@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+
+  <div id="game">
+    <h4>Your Guess: <span id="user-guess">Choose either "r", "p", or "s".<span></h4>
+      <br>
+
+    <h4>Computer Guess: <span id="computer-guess"><span></h4>
+
+      <br>
+      <h4>Your Score: <span id="user-score">0</span></h4>
+      <br>
+      <h4>Computer Score: <span id="computer-score">0</span></h4>
+      <br>
+      <h4>Ties: <span id="ties">0</span></h4>
+
+  </div>
+
+  <script type="text/javascript">
+    // Whenever a key is pressed, alert "pressed a button".
+    var computerChoices = ["r", "p", "s"];
+
+    var userText = document.getElementById("user-guess");
+
+    var computerGuess;
+
+    var userInput;
+
+    var userScoreText = document.getElementById("user-score");
+    var userScore = 0;
+    var computerScoreText = document.getElementById("computer-score");
+    var computerScore = 0;
+    var tiesText = document.getElementById("ties");
+    var ties = 0;
+
+    document.onkeyup = function(event) {
+      userInput = event.key;
+
+      userText.textContent = event.key;
+        
+      computerGuess = computerChoices[Math.floor(Math.random() *  computerChoices.length)];
+        
+      var computerText = document.getElementById("computer-guess");
+
+      computerText.textContent = computerGuess;
+
+      if(userInput == computerGuess) {
+        ties++;
+      } else if(userInput == "r") {
+        if(computerGuess == "p"){
+          computerScore++;
+        } else {
+          userScore++;
+        }
+      } else if(userInput == "s") {
+        if(computerGuess == "r") {
+          computerScore++;
+        } else {
+          userScore++;
+        }
+      } else if(userInput == "p") {
+        if(computerGuess == "s") {
+          computerScore++;
+        } else {
+          userScore++;
+        }
+      }
+
+      userScoreText.textContent = userScore;
+      computerScoreText.textContent = computerScore;
+      tiesText.textContent = ties;
+      /*
+      if(computerGuess === "r" && userInput === "s") {
+        computerScore++;
+      } else if(computerGuess === "r" && userInput === "p") {
+        userScore++;
+      } else if(computerGuess === "r" && userInput === "r") {
+        ties++;
+      } else if(computerGuess === "s" && userInput === "p") {
+        computerScore++;
+      } else if(computerGuess === "s" && userInput === "r") {
+        userScore++;   
+      } else if(computerGuess === "s" && userInput === "s") {
+        ties++;  
+      } else if(computerGuess === "p" && userInput === "r") {
+        computerScore++;     
+      } else if(ComputerGuess === "p" && userInput === "s") {
+        userScore++;       
+      } else if(ComputerGuess === "p" && userInput === "p") {
+        ties++;      
+      } else {
+        alert("Please choose again");
+      }
+      */
+    };
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

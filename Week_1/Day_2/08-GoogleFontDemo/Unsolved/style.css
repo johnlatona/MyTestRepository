@@ -1,0 +1,25 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+.thought1 {
+	font-family: Work Sans, sans-serif;
+
+}
+
+.thought2 {
+	font-family: Rubik, sans-serif;
+}
+
+.thought3 {
+	font-family: Archivo Narrow, sans-serif;
+}
+
+a:hover{
+	background-color: red;
+}
+
+a:focus {
+	background-color: blue;
+}
