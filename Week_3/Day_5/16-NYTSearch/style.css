@@ -1,0 +1,21 @@
+#header {
+	background-color: #1B3463;
+	color: white;
+	text-align: center;
+	margin-top: 0;
+}
+
+#search-parameters-header, #articles-header {
+	background-color: #1B3463;
+	color: white;
+}
+
+#newspaper-icon {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+#list-icon {
+	margin-right: 10px;
+}
