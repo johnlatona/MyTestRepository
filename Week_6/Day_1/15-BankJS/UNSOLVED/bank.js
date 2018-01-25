@@ -7,6 +7,8 @@ function bankApp(operation, amount) {
 	var total;
 	var rounded;
 
+	debugger;
+
 	if(operation === "total") {
 		fs.readFile("bank.txt", "utf8", function(error, data) {
 

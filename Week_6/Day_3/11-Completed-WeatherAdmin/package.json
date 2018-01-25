@@ -1,0 +1,15 @@
+{
+  "name": "11-completed-weatheradmin",
+  "version": "1.0.0",
+  "description": "* Create a command line interface application using Node.js (either with inquirer or process.argv).",
+  "main": "CLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^5.0.0",
+    "weather-js": "^2.0.0"
+  }
+}

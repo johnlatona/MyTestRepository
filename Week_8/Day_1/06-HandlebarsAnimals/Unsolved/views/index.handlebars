@@ -1,0 +1,14 @@
+<!-- 5. Output the animalType string, pet boolean, and fierceness number to the page for all the pets. -->
+
+<table>
+	<th>Animal</th>
+	<th>Pet</th>
+	<th>Fierceness</th>
+	{{#each animals}}
+	<tr>
+		<td>{{animalType}}</td>
+		<td>{{pet}}</td>
+		<td>{{fierceness}}</td>
+	</tr>
+	{{/each}}
+</table>

@@ -1,0 +1,15 @@
+{
+  "name": "13-top5000code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "topSongs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^5.0.0",
+    "mysql": "^2.15.0"
+  }
+}
